@@ -1,0 +1,67 @@
+.containerLevelUpModal {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+
+    background-color: rgba(0, 0, 0, 0.767);
+}
+
+.containerLevelUpModal .continaerBoxModal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+    height: 70%;
+    background: var(--background-color);
+    border-radius: 5px;
+
+    box-shadow: 0 0 5px var(--background-progress-bar-state);
+
+    position: relative;
+
+    padding: 1.5rem 2rem;
+}
+.containerLevelUpModal .continaerBoxModal  header {
+    font-weight: 600;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    margin-top: 0 auto;
+    font-size: 8.75rem;
+    color: var(--background-progress-bar-state);
+    background: url('/download/public/icons/levelup.svg') no-repeat center;
+    background-size: contain;
+    z-index: 5;
+}
+
+.containerLevelUpModal .continaerBoxModal strong {
+    font-size: 2.25rem;
+    color: var(--color-name-profile);
+}
+
+.containerLevelUpModal .continaerBoxModal p {
+    color: var(--background-color-white);
+    font-size: 1.25rem;
+    margin-top: 0.25;
+}
+
+.containerLevelUpModal .continaerBoxModal button {
+    top: 0.5rem;
+    right: 0.5rem;
+    position: absolute;
+    background-color: transparent;
+    color: var(--background-progress-bar-state);
+    border: 2px solid var(--background-progress-bar-state);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

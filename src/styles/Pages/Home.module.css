@@ -1,0 +1,25 @@
+.containerHome {
+    height: 100vh;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+
+}
+
+.containerHome section {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6.25rem;
+    align-content: center;
+    height: 90%;
+}
+
+@media (max-width: 1020px) {
+    .containerHome section {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 300px;
+    }
+    
+}

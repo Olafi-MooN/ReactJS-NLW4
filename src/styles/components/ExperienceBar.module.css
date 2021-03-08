@@ -1,0 +1,40 @@
+.containerExperienceBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    position: relative;
+}
+
+.containerExperienceBar span {
+    color: var(--background-progress-bar-state);
+    font-weight: 700;
+}
+
+.containerExperienceBar .containerBar {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerExperienceBar .containerBar progress {
+    width: 80%;
+    height: 0.8rem;
+    position: relative;
+    background-color: var(--background-progress-bar);
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+}
+
+.containerExperienceBar .containerBar div {
+    position: absolute;
+}
+
+.containerExperienceBar .containerBar div span {
+    height: 90%;
+    color: #f1f1f1;
+}

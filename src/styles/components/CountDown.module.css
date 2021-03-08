@@ -1,0 +1,81 @@
+.countDownContainer {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: var(--color-name-profile);
+    
+}
+
+.countDownContainer > div {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(background-color-white);
+    border-radius: 5px;
+    font-size: 8.5rem;
+}
+
+.countDownContainer div span {
+    background-color: #3335386c;
+    text-align: center;
+} 
+
+.countDownContainer > div span {
+    flex: 1;
+}
+
+.countDownContainer > div span:first-child {
+    border-right: 1px solid #1f2020a8 ;
+}
+
+.containerButton {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.restartCountDownButton,
+.startCountDownButton:last-child,
+.startCountDownButton:first-child {
+    width: 45%;
+    height: 5rem;
+    margin-top: 2rem;
+
+    border-radius: 5px;
+    border: none;
+
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color-button-countDown-start);
+    color: var(--background-color-white);
+
+    transition: background-color 0.3s ease-in;
+}
+
+.restartCountDownButton {
+    background-color: var(--color-button-countDown-stop);
+}
+
+.startCountDownButton:last-child {
+    background-color: var(--color-button-countDown-pause);
+}
+
+.startCountDownButton:disabled {
+    width: 100%;
+    background-color: rgba(255, 166, 0, 0.719);
+    color: var(--background-color-white);
+    pointer-events: none;
+}
+
+.restartCountDownButton:hover,
+.startCountDownButton:hover {
+    background-color: rgba(255, 166, 0, 0.719);
+    color: var(--background-progress-bar-state);
+}

@@ -1,0 +1,20 @@
+.completadeStaged {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 3.5rem  0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--background-progress-bar-state);
+    font-weight: 500;
+
+    width: 100%;
+}
+
+.completadeStaged > span {
+    font-size: 1.5rem;
+}
+
+.completadeStaged > span > span {
+    font-size: 1.5rem;
+}
